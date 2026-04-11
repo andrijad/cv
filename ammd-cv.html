@@ -6,6 +6,9 @@
 <meta name="description" content="Senior PM with 9+ years shipping B2B platforms and AI products.">
 <meta property="og:title" content="Andrija Despotović — Senior Product Manager">
 <meta property="og:description" content="Senior PM · B2B Platforms, AI Automation & Agent Orchestration">
+<meta property="og:type" content="profile">
+<meta property="og:url" content="">
+<meta property="og:image" content="">
 <title>Andrija Despotović — Senior Product Manager</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -116,7 +119,7 @@
   .header-contact a:hover { color: var(--accent); border-color: var(--accent-mid); }
 
   /* ── LAYOUT ── */
-  .body {
+  .cv-layout {
     display: grid;
     grid-template-columns: 248px 1fr;
   }
@@ -368,18 +371,17 @@
   .main { padding: 28px 48px 28px 36px; }
   .header::after { display: none; }
 
-  /* Novo: */
   .job { page-break-inside: avoid; }
   .section { page-break-inside: avoid; }
 
-  /* Prikazuje URL-ove u štampi */
+  /* Show full URLs when printing */
   a[href^="http"]::after {
     content: " (" attr(href) ")";
     font-size: 0.72rem;
     color: #666;
     font-weight: 300;
   }
-  /* Izuzmi linkove koji su samo dekorativni (proj-link već ima vidljiv URL tekst) */
+  /* Exclude decorative links (proj-link already shows visible URL text) */
   .proj-link::after,
   .client-link::after { content: none; }
 }
@@ -398,11 +400,11 @@
       <span><a href="https://www.linkedin.com/in/andrija-despotovic/" target="_blank" rel="noopener noreferrer">linkedin.com/in/andrija-despotovic</a></span>
       <span><a href="https://github.com/andrijad" target="_blank" rel="noopener noreferrer">github.com/andrijad</a></span>
       <span><a href="https://devsmachina.app" target="_blank" rel="noopener noreferrer">devsmachina.app</a></span>
-	  <span><a href="tel:+38163274702">+381 (63) 274-702</a></span>
+      <span><a href="tel:+38163274702">+381 (63) 274-702</a></span>
     </div>
   </header>
 
-  <div class="body">
+  <div class="cv-layout">
 
     <!-- SIDEBAR -->
     <aside class="sidebar">
@@ -464,7 +466,8 @@
       <!-- SKILLS -->
       <div class="section">
         <div class="section-head"><h2>Skills &amp; Technical Stack</h2></div>
-        <table class="skills-table">
+        <table class="skills-table" aria-label="Skills and Technical Stack">
+          <tbody>
           <tr>
             <th scope="row">AI / LLM Integration</th>
             <td>Anthropic Claude API, OpenAI API, RAG architecture, agent orchestration, prompt engineering, LLM cost/latency tradeoffs, hallucination mitigation strategies</td>
@@ -493,6 +496,7 @@
             <th scope="row">Tools</th>
             <td>Jira, Confluence, Trello, Asana, GitHub, Notion, Figma</td>
           </tr>
+          </tbody>
         </table>
       </div>
 
@@ -520,7 +524,7 @@
             <div class="job-title">Product Owner / Account Manager — Keystone Studio</div>
             <div class="job-period">2023 – present</div>
           </div>
-            <div class="job-meta">Belgrade, Serbia</div>
+          <div class="job-meta">Belgrade, Serbia</div>
           <ul>
             <li>Owning B2B platform product strategy for multi-tenant ecommerce systems — defining API integration requirements, managing partner onboarding flows, and shipping AI-assisted features for enterprise clients.</li>
             <li>Aligned business, UX/UI, and engineering teams; managed backlog, delivery planning, and UAT cycles across concurrent client projects.</li>
@@ -534,7 +538,7 @@
             <div class="job-title">Senior Project Manager / Product Owner — Devokado / Avokado</div>
             <div class="job-period">2019 – present</div>
           </div>
-		  <div class="job-meta"><a href="https://devokado.rs" target="_blank" rel="noopener noreferrer">devokado.rs</a> · Belgrade, Serbia</div>
+          <div class="job-meta"><a href="https://devokado.rs" target="_blank" rel="noopener noreferrer">devokado.rs</a> · Belgrade, Serbia</div>
           <ul>
             <li>Managed web and custom SaaS development across multiple parallel client projects — platform performance, feature delivery, and cross-functional coordination.</li>
             <li>Delivered tailored tools and integrations for Keestrack, Canvas, BASF, Schneider Electric, MDConnect, and others.</li>
@@ -546,7 +550,7 @@
             <div class="job-title">Account Manager — Degordian</div>
             <div class="job-period">2020 – 2022</div>
           </div>
-		   <div class="job-meta"><a href="https://degordian.com" target="_blank" rel="noopener noreferrer">degordian.com</a> · Belgrade, Serbia; Zagreb, Croatia;</div>
+          <div class="job-meta"><a href="https://degordian.com" target="_blank" rel="noopener noreferrer">degordian.com</a> · Belgrade, Serbia; Zagreb, Croatia</div>
           <ul>
             <li>Led digital projects for Štark, BASF, Jelen, Schneider Electric, and the Innovation Fund — web development, SEO, PPC, social campaigns.</li>
             <li>Main point of contact across parallel client workstreams; shaped requirements and aligned stakeholders through delivery.</li>
@@ -558,7 +562,7 @@
             <div class="job-title">Account Director / Manager — Next Game</div>
             <div class="job-period">2016 – 2019</div>
           </div>
-		     <div class="job-meta"><a href="https://nextgame.rs" target="_blank" rel="noopener noreferrer">nextgame.rs</a> · Belgrade, Serbia</div>
+          <div class="job-meta"><a href="https://nextgame.rs" target="_blank" rel="noopener noreferrer">nextgame.rs</a> · Belgrade, Serbia</div>
           <ul>
             <li>Led digital and creative accounts for B2B and consumer clients; managed cross-functional teams across design, development, and media.</li>
           </ul>
@@ -569,11 +573,11 @@
             <div class="job-title">Curator &amp; Project Manager — National Museum of Serbia</div>
             <div class="job-period">2009 – 2016</div>
           </div>
-		   <div class="job-meta"><a href="https://www.narodnimuzej.rs" target="_blank" rel="noopener noreferrer">narodnimuzej.rs</a> · Belgrade, Serbia</div>
+          <div class="job-meta"><a href="https://www.narodnimuzej.rs" target="_blank" rel="noopener noreferrer">narodnimuzej.rs</a> · Belgrade, Serbia</div>
           <ul>
             <li>Managed digital and cultural projects including the EU-funded <strong>GIFT Horizon 2020</strong> interactive gamification initiative for European museums.</li>
             <li>Coordinated cross-border teams across UX, content, and academic domains.</li>
-			<li>Museum website was chosen as the <a href="https://www.narodnimuzej.rs/najboljisajtpriznanje/" target="_blank" rel="noopener noreferrer">best website</a> in CH sector in 2018 by the PC magazine</li>			
+            <li>Museum website was chosen as the <a href="https://www.narodnimuzej.rs/najboljisajtpriznanje/" target="_blank" rel="noopener noreferrer">best website</a> in CH sector in 2018 by the PC magazine</li>
           </ul>
         </div>
 
@@ -591,7 +595,8 @@
       <!-- PROJECTS -->
       <div class="section">
         <div class="section-head"><h2>Selected Products (Zero-to-One)</h2></div>
-        <table class="proj-table">
+        <table class="proj-table" aria-label="Selected Products">
+          <tbody>
           <tr>
             <th scope="row"><strong>DevsMachina</strong></th>
             <td>AI studio platform — hub for agent orchestration, automation, and web development services. Built on Astro + Cloudflare Pages + GitHub Actions CI/CD.</td>
@@ -631,6 +636,7 @@
               <span class="proj-status shipped">shipped</span>
             </td>
           </tr>
+          </tbody>
         </table>
       </div>
 
