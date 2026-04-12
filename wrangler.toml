@@ -1,2 +1,5 @@
-# wrangler.toml
-name = 'cv'
+name = "cv"
+compatibility_date = "2026-04-12"
+
+[assets]
+directory = "."
